@@ -9,49 +9,86 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.js"></script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600&family=Noto+Sans:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300&family=Roboto:wght@100;300;400;500&display=swap"
+    rel="stylesheet">
   <title>World Clock</title>
 </head>
 
 <body>
-  <div class="container"></div>
-  <h1>World Clock</h1>
-  <select class="select" id="select">
-    <option value="">Choose a city</option>
-    <option value="new york" id="new york">New York</option>
-    <option value="chicago" id="chicago">Chicago</option>
-    <option value="los angeles" id="los angeles>">Los Angeles</option>
-    <option value="tokyo" id="tokyo">Tokyo</option>
-    <option value="paris" id="paris">Paris</option>
-    <option value="sydney" id="sydney">Sydney</option>
-  </select>
-  <div class="cities">
-    <h2>New York</h2>
-    <div class="date">Thursday, August 17th, 2023</div>
-    <div class="time">3:29:45 PM</div>
-    <h2>Chicago</h2>
-    <div class="date">Thursday, August 17th, 2023</div>
-    <div class="time">3:29:45 PM</div>
-    <h2>Los Angeles</h2>
-    <div class="date">Thursday, August 17th, 2023</div>
-    <div class="time">3:29:45 PM</div>
-    <h2>Tokyo</h2>
-    <div class="date">Thursday, August 17th, 2023</div>
-    <div class="time">3:29:45 PM</div>
-    <h2>Paris</h2>
-    <div class="date">Thursday, August 17th, 2023</div>
-    <div class="time">3:29:45 PM</div>
-    <h2>Sydney</h2>
-    <div class="date">Thursday, August 17th, 2023</div>
-    <div class="time">3:29:45 PM</div>
+  <div class="container">
+    <h1 class="header">World Clock 🌎
+    </h1>
+    <select class="select" id="select">
+      <option value="">Select a location...</option>
+      <option value="current location" id="current-location">Current Location</option>
+      <option value="new york" id="new york">New York</option>
+      <option value="chicago" id="chicago">Chicago</option>
+      <option value="los angeles" id="los angeles>">Los Angeles</option>
+      <option value="tokyo" id="tokyo">Tokyo</option>
+      <option value="paris" id="paris">Paris</option>
+      <option value="sydney" id="sydney">Sydney</option>
+    </select>
+    <div class="cities">
+      <div id="new-york" class="city">
+        <div>
+          <h2>New York 🇺🇸</h2>
+          <div class="date">Thursday, August 17th, 2023</div>
+        </div>
+        <div>
+          <div class="time">3:29:45 PM</div>
+        </div>
+      </div>
+      <div id="johannesburg" class="city">
+        <div>
+          <h2>Johannesburg 🇿🇦</h2>
+          <div class="date">Thursday, August 17th, 2023</div>
+        </div>
+        <div>
+          <div class="time">3:29:45 PM</div>
+        </div>
+      </div>
+      <div id="tokyo" class="city">
+        <div>
+          <h2>Tokyo 🇯🇵</h2>
+          <div class="date">Thursday, August 17th, 2023</div>
+        </div>
+        <div>
+          <div class="time">3:29:45 PM</div>
+        </div>
+      </div>
+    </div>
+    <div id="paris" class="city">
+      <div>
+        <h2>Paris 🇫🇷</h2>
+        <div class="date">Thursday, August 17th, 2023</div>
+      </div>
+      <div>
+        <div class="time">3:29:45 PM</div>
+      </div>
+    </div>
+    <div id="sydney" class="city">
+      <div>
+        <h2>Sydney 🇦🇺</h2>
+        <div class="date">Thursday, August 17th, 2023</div>
+      </div>
+      <div>
+        <div class="time">3:29:45 PM</div>
+      </div>
+    </div>
   </div>
-  </br>
+  </div>
+  </div>
+  </div>
   <footer>
-    Coded with 🤍 by Danielle Sparks & Open Sourced on <a href="https://github.com/sparksdaniellea/world-clock.git"
-      target=_"blank">Github</a>
+    Coded with 🤍 by <strong>Danielle Sparks</strong> & Open Sourced on <a
+      href="https://github.com/sparksdaniellea/world-clock.git" target=_"blank">Github</a>
   </footer>
   <script src="javascript/index.js"></script>
-  </div>
 </body>
 
 </html>
