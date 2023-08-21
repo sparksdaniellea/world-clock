@@ -1,3 +1,14 @@
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(32, 125, 233, 0.8);
+}
+a:hover {
+  color: #207de9;
+}
+a:visited {
+  color: #692d94;
+}
 body {
   font-family: "DM Sans", sans-serif;
   background-color: #f9f7fe;
@@ -29,6 +40,7 @@ img {
   width: 40px;
   height: 40px;
 }
+
 .container {
   max-width: 625px;
   margin: 50px auto;

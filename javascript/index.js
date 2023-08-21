@@ -55,14 +55,17 @@ function changeCity(event) {
   }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityDate = moment().tz(cityTimeZone).format("dddd, MMMM DD, YYYY");
-  let cityTime = moment().tz(cityTimeZone).format("h:mm:ss A");
+  let cityTime = moment().tz(cityTimeZone).format("h:mm A");
   let changeCityElement = document.querySelector("#cities");
   changeCityElement.innerHTML = `<div  class="city"> 
   <div> <h2>${cityName}</h2> 
   <div class="date">${cityDate}</div>
   </div> 
   <div class="time">${cityTime}</div>
-  </div>`;
+   </div>
+   </br>
+  <a href="https://danielle-world-clock.netlify.app">👈 Show All Cities</a>    </div>
+`;
 }
 
 let selectElement = document.querySelector("#select");
